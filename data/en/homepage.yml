@@ -138,13 +138,7 @@ portfolio:
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port2.jpg"
-      date : "Feb 2018"
-      category : "People"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port3.jpg"
+      image : "images/portfolio/port1.jpg"
       date : "Feb 2018"
       category : "People"
       
@@ -156,37 +150,19 @@ portfolio:
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port2.jpg"
+      image : "images/portfolio/port1.jpg"
       date : "Feb 2018"
       category : "People"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port3.jpg"
+      image : "images/portfolio/port1jpg"
       date : "Feb 2018"
-      category : "Architecture"
+      category : "People"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
-      date : "Feb 2018"
-      category : "Architecture"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port2.jpg"
-      date : "Feb 2018"
-      category : "Architecture"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port3.jpg"
-      date : "Feb 2018"
-      category : "Architecture"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
+      image : "images/portfolio/port2jpg"
       date : "Feb 2018"
       category : "Architecture"
       
@@ -194,13 +170,37 @@ portfolio:
     - name : "Project <br> Title"
       image : "images/portfolio/port2.jpg"
       date : "Feb 2018"
-      category : ""
+      category : "Architecture"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port2jpg"
+      date : "Feb 2018"
+      category : "Architecture"
       
     # portfolio item loop
     - name : "Project <br> Title"
       image : "images/portfolio/port3.jpg"
       date : "Feb 2018"
-      category : "Graphics"
+      category : "Street"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port3.jpg"
+      date : "Feb 2018"
+      category : "Street"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port3.jpg"
+      date : "Feb 2018"
+      category : "Street"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port4.jpg"
+      date : "Feb 2018"
+      category : "Foto"
       
 
 
