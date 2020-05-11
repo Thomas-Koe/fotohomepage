@@ -40,7 +40,7 @@ about:
   
 ###########################3 Experience ##############################
 experience:
-  enable : true
+  enable : false
   title : "EXPERIENCE"
   experience_list:
     # experience item loop
@@ -64,7 +64,7 @@ experience:
 
 ############################### Skill #################################
 skill:
-  enable : true
+  enable : false
   title : "SKILL"
   skill_list:
     # skill item loop
@@ -86,7 +86,7 @@ skill:
 
 ################################### Service ##############################3
 service:
-  enable : true
+  enable : false
   title : "SERVICES"
   service_list:
     # service item loop
@@ -206,7 +206,7 @@ portfolio:
 
 ################################# Testimonial #########################33
 testimonial:
-  enable : true
+  enable : false
   title : "TESTIMONIALS"
   testimonial_slider:
     # slider item loop
@@ -233,7 +233,7 @@ testimonial:
 
 ######################### funfacts #############################3
 funfacts:
-  enable : true
+  enable : false
   funfacts_list:
     # funfacts item loop
     - name : "HANDS TO WORK"

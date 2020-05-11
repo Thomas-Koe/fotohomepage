@@ -58,7 +58,7 @@ URL = "#about"
 weight = 2
 
 [[menu.main]]
-name = "Service"
+name = "Leistungen"
 URL = "#service"
 weight = 3
 
@@ -68,7 +68,7 @@ URL = "#portfolio"
 weight = 4
 
 [[menu.main]]
-name = "Testimonial"
+name = "Blog"
 URL = "#testimonial"
 weight = 5
 
@@ -120,12 +120,3 @@ home = "Home"
 copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
 
 
-################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
-home = "Accueil"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
