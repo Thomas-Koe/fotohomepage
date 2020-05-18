@@ -4,9 +4,10 @@ hero:
 
   # animated text loop
   occupations:
-    - "Fotograf"
-    - "Videograf"
-    - "Künstler"
+    - "photo"
+    - "video"
+    - "art"
+    - "music"
 
   # slider background image loop
   slider_image:
@@ -19,7 +20,7 @@ hero:
   # button
   button:
     enable : true
-    label : "Kontakt"
+    label : "KONTAKT"
     link : "#contact"
 
 
@@ -35,32 +36,51 @@ fullscreen_nav:
 about:
   enable : true
   image : "images/backgrounds/portrait.jpg"
-  title : "Über mich"
-  content : "Fotograf"
+  title : "über"
+  content : "Hallo, ich bin Thomas. Freier Foto- & Videograf, Künstler und Musiker. <br> Ich bin wohnhaft im schönen Dortmund und arbeite im Ruhrgebiet und auch darüber hinaus."
   
 ###########################3 Experience ##############################
 experience:
-  enable : false
-  title : "EXPERIENCE"
-  experience_list:
-    # experience item loop
-    - name : "Web Developer"
-      company : "Fiverr.com"
-      duration : "2016-2018"
-      content : "I work with HTML, CSS, and Javascript to create websites and web applications like Personal, Business, Blog, E-comerches etc."
+  enable : true
+  title : "photo"
+  portfolio_list:
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port1.jpg"
+      date : "Feb 2018"
+      category : "People"
       
-    # experience item loop
-    - name : "Graphic Designer"
-      company : "Fiverr.com"
-      duration : "2015-2018"
-      content : "Graphic design is art with a purpose. I love illustration, so logo desing is my favorite work. But i can do many things with graphics."
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port1.jpg"
+      date : "Feb 2018"
+      category : "People"
       
-    # experience item loop
-    - name : "Database Manager"
-      company : "Polytechnic"
-      duration : "2014-2018"
-      content : "Database management is among the fundamental processes in the software field of computing. I know MS Access very well."
-
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port1.jpg"
+      date : "Feb 2018"
+      category : "People"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port1.jpg"
+      date : "Feb 2018"
+      category : "People"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port1jpg"
+      date : "Feb 2018"
+      category : "People"
+      
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/portfolio/port2jpg"
+      date : "Feb 2018"
+      category : "Architecture"
+      
+    
 
 ############################### Skill #################################
 skill:
@@ -116,19 +136,19 @@ service:
 
 ############################## call to action #########################
 call_to_action:
-  enable : true
+  enable : false
   bg_image : "images/backgrounds/need-service.jpg"
-  title : "Wie kann ich dir helfen?"
+  title : 
   button:
     enable : true
-    label : "Schreib mir!"
+    label : "KONTAKT"
     link : "#contact"
 
 
 ############################# portfolio ################################
 portfolio:
   enable : true
-  title : "Gallerie"
+  title : "video"
   portfolio_list:
     # portfolio item loop
     - name : "Project <br> Title"
@@ -259,4 +279,4 @@ funfacts:
 ############################## contact ###########################
 contact:
   enable : true
-  title : "Deine Anfrage"
+  title : "KONTAKT"

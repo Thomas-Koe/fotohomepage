@@ -48,32 +48,32 @@ link = "plugins/owl-carousel/owl.carousel.min.js"
 
 # main menu
 [[menu.main]]
-name = "Home"
+name = "home"
 URL = "#home"
 weight = 1
 
 [[menu.main]]
-name = "Über mich"
+name = "über"
 URL = "#about"
 weight = 2
 
 [[menu.main]]
-name = "Leistungen"
+name = "photo"
 URL = "#service"
 weight = 3
 
 [[menu.main]]
-name = "Gallerie"
+name = "video"
 URL = "#portfolio"
 weight = 4
 
 [[menu.main]]
-name = "Blog"
+name = "art"
 URL = "#testimonial"
 weight = 5
 
 [[menu.main]]
-name = "Kontakt"
+name = "kontakt"
 URL = "#contact"
 weight = 6
 
