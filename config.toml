@@ -4,6 +4,7 @@ title = "Somrat | Hugo Portfolio Template"
 theme = "somrat"
 # disable language
 disableLanguages = [] # desable language from here
+defaultContentLanguage = "de"
 
 ############################# Plugins ##############################
 
@@ -77,7 +78,6 @@ name = "kontakt"
 URL = "#contact"
 weight = 6
 
-
 #################### default parameters ################################
 [params]
 logo_light = "images/logo.png"
@@ -89,6 +89,8 @@ author = "Thomas Köller"
 contact_form_action = "" # contact form works with https://formspree.io
 # Google Analitycs
 google_analitycs_id = "" # your id
+
+
 
 # Preloader
 [params.preloader]
@@ -108,13 +110,23 @@ link = "https://www.instagram.com/thomas_koeller_photo"
 icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
 link = "https://twitter.com/thomas_koeller"
 
+################################### German language #####################################
+[Languages.de]
+languageName = "De"
+languageCode = "de-de"
+contentDir = "content/german"
+weight = 1
+home = "home"
+# copyright
+copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+
 
 ################################### English language #####################################
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
+weight = 2
 home = "Home"
 # copyright
 copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
