@@ -24,6 +24,8 @@ hero:
     link : "#contact"
 
 
+
+
 ####################### Full screen navigation #####################
 fullscreen_nav:
   enable : true
@@ -32,106 +34,6 @@ fullscreen_nav:
   last_name : "Photo | Video | Art"
   
 
-########################### About ##################################
-about:
-  enable : true
-  image : "images/backgrounds/portrait.jpg"
-  title : "über"
-  content : "Hallo, ich bin Thomas. Freier Foto- & Videograf, Künstler und Musiker. <br> Ich bin wohnhaft im schönen Dortmund und arbeite im Ruhrgebiet und auch darüber hinaus."
-  
-###########################3 Experience ##############################
-experience:
-  enable : true
-  title : "photo"
-  portfolio_list:
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
-      date : "Feb 2018"
-      category : "People"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
-      date : "Feb 2018"
-      category : "People"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
-      date : "Feb 2018"
-      category : "People"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
-      date : "Feb 2018"
-      category : "People"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port1jpg"
-      date : "Feb 2018"
-      category : "People"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port2jpg"
-      date : "Feb 2018"
-      category : "Architecture"
-      
-    
-
-############################### Skill #################################
-skill:
-  enable : false
-  title : "SKILL"
-  skill_list:
-    # skill item loop
-    - name : "Web Development"
-      parcentage : "98%"
-      
-    # skill item loop
-    - name : "Graphic Design"
-      parcentage : "85%"
-      
-    # skill item loop
-    - name : "Database Management"
-      parcentage : "90%"
-      
-    # skill item loop
-    - name : "Wordpress"
-      parcentage : "70%"
-
-
-################################### Service ##############################3
-service:
-  enable : false
-  title : "SERVICES"
-  service_list:
-    # service item loop
-    - name : "Web Development"
-      image : "images/icons/web-development.png"
-      
-    # service item loop
-    - name : "Graphic Design"
-      image : "images/icons/graphic-design.png"
-      
-    # service item loop
-    - name : "Database Management"
-      image : "images/icons/dbms.png"
-      
-    # service item loop
-    - name : "Software Development"
-      image : "images/icons/software-development.png"
-      
-    # service item loop
-    - name : "Digital Marketing"
-      image : "images/icons/marketing.png"
-      
-    # service item loop
-    - name : "Mobile App Development"
-      image : "images/icons/mobile-app.png"
 
 
 ############################## call to action #########################
@@ -145,135 +47,111 @@ call_to_action:
     link : "#contact"
 
 
-############################# portfolio ################################
-portfolio:
+
+
+############################# foto ################################
+foto:
   enable : true
-  title : "video"
-  portfolio_list:
+  title : "PHOTO"
+  foto_list:
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
+      image : "images/photo/people1.jpg"
       date : "Feb 2018"
       category : "People"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
+      image : "images/photo/people2.jpg"
       date : "Feb 2018"
       category : "People"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
+      image : "images/photo/people3.jpg"
       date : "Feb 2018"
       category : "People"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port1.jpg"
+      image : "images/photo/doku1.jpg"
       date : "Feb 2018"
-      category : "People"
+      category : "Doku"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port1jpg"
+      image : "images/photo/doku2.jpg"
       date : "Feb 2018"
-      category : "People"
+      category : "Doku"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port2jpg"
+      image : "images/photo/doku3.jpg"
       date : "Feb 2018"
-      category : "Architecture"
+      category : "Doku"
+
+      # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/photo/projekt1.jpg"
+      date : "Feb 2018"
+      category : "Projekte"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port2.jpg"
+      image : "images/photo/projekt2.jpg"
       date : "Feb 2018"
-      category : "Architecture"
+      category : "Projekte"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port2jpg"
+      image : "images/photo/projekt3.jpg"
       date : "Feb 2018"
-      category : "Architecture"
+      category : "Projekte"
+
+      # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/photo/frei1.jpg"
+      date : "Feb 2018"
+      category : "freie Arbeiten"
       
     # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port3.jpg"
+      image : "images/photo/frei2.jpg"
       date : "Feb 2018"
-      category : "Street"
-      
-    # portfolio item loop
+      category : "freie Arbeiten"
+
+      # portfolio item loop
     - name : "Project <br> Title"
-      image : "images/portfolio/port3.jpg"
+      image : "images/photo/frei3.jpg"
       date : "Feb 2018"
-      category : "Street"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port3.jpg"
-      date : "Feb 2018"
-      category : "Street"
-      
-    # portfolio item loop
-    - name : "Project <br> Title"
-      image : "images/portfolio/port4.jpg"
-      date : "Feb 2018"
-      category : "Foto"
-      
+      category : "freie Arbeiten"
 
 
-################################# Testimonial #########################33
-testimonial:
-  enable : false
-  title : "TESTIMONIALS"
-  testimonial_slider:
-    # slider item loop
-    - name : "Micheal Clark"
-      image : "images/clients/client1.jpg"
-      designation : "CEO, RANDOM COMPANY"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-                
-    # slider item loop
-    - name : "Peter Parker"
-      image : "images/clients/client2.jpg"
-      designation : "CEO, RANDOM COMPANY"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
-                
-    # slider item loop
-    - name : "Jessica Jones"
-      image : "images/clients/client3.jpg"
-      designation : "CEO, RANDOM COMPANY"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-                omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
 
 
-######################### funfacts #############################3
-funfacts:
-  enable : false
-  funfacts_list:
-    # funfacts item loop
-    - name : "HANDS TO WORK"
-      image : "images/icons/works.png"
-      count : "100"
-      
-    # funfacts item loop
-    - name : "HAPPY CLIENT"
-      image : "images/icons/happy.png"
-      count : "200"
-      
-    # funfacts item loop
-    - name : "FINISHED PROJECT"
-      image : "images/icons/project.png"
-      count : "250"
-      
-    # funfacts item loop
-    - name : "CUPS OF COFFEE"
-      image : "images/icons/coffee.png"
-      count : "150"
+############################# portfolio ################################
+video:
+  enable : true
+  title : "VIDEO"
+  video_list:
+    # portfolio item loop
+    - name : "Project <br> Title"
+      image : "images/video/video1.mov"
+      date : "Feb 2018"
+      category : "Video"
+    
+   
+
+
+
+########################### About ##################################
+about:
+  enable : true
+  image : "images/backgrounds/portrait.jpg"
+  title : "über"
+  content : "Hallo, ich bin Thomas. Freier Foto- & Videograf, Künstler und Musiker. <br> Ich bin wohnhaft im schönen Dortmund und arbeite im Ruhrgebiet und auch darüber hinaus."
+  
+
 
 
 ############################## contact ###########################

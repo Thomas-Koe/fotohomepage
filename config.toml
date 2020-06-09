@@ -49,32 +49,32 @@ link = "plugins/owl-carousel/owl.carousel.min.js"
 
 # main menu
 [[menu.main]]
-name = "home"
+name = "HOME"
 URL = "#home"
 weight = 1
 
 [[menu.main]]
-name = "über"
-URL = "#about"
+name = "PHOTO"
+URL = "#service"
 weight = 2
 
 [[menu.main]]
-name = "photo"
-URL = "#service"
+name = "VIDEO"
+URL = "#portfolio"
 weight = 3
 
 [[menu.main]]
-name = "video"
-URL = "#portfolio"
+name = "BLOG"
+URL = "#testimonial"
 weight = 4
 
 [[menu.main]]
-name = "art"
-URL = "#testimonial"
+name = "ÜBER"
+URL = "#about"
 weight = 5
 
 [[menu.main]]
-name = "kontakt"
+name = "KONTAKT"
 URL = "#contact"
 weight = 6
 
@@ -117,17 +117,6 @@ languageCode = "de-de"
 contentDir = "content/german"
 weight = 1
 home = "home"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
-
-
-################################### English language #####################################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 2
-home = "Home"
 # copyright
 copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
 

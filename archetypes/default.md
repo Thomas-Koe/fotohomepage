@@ -1,6 +1,9 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Testeintrag}"
 date: {{ .Date }}
-draft: true
+draft: false
 ---
 
+# DAs ist eine Überschrift
+
+Das ist der Flie0text. (Das ist ein Link)[www.google.de]

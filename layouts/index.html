@@ -180,145 +180,68 @@
       End Menu
     =============================== -->
 
+
 <!-- =============================
-       Start About Me
+       Start Photo
     =============================== -->
-<section class="about-me" id="about">
-  <div class="container">
-    {{ if $data.homepage.about.enable }}
-    {{ with $data.homepage.about }}
-    <div class="row about-me-holder">
-      <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
-        <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
-          <h1>{{ .title | safeHTML }}</h1>
-          <p>{{ .content | markdownify | emojify }}</p>
-          {{ if .button.enable }}
-          {{ with .button }}
-          <a href="{{ .link | absURL }}" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-      {{ with .image }}
-      <div class="col-lg-6 col-sm-6 col-9 about-me-images wow fadeInUp" data-wow-duration="1.5s">
-        <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
-      </div>
-      {{ end }}
-    </div>
-    {{ end }}
-    {{ end }}
-
-    <div class="row experience-skill">
-      {{ if $data.homepage.experience.enable }}
-      {{ with $data.homepage.experience }}
-      <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
-        <h3>{{ .title }}</h3>
-        <ul class="experience-chart">
-          {{ range .experience_list }}
-          <li>
-            <div class="single-experience">
-              <h4>{{ .name | markdownify }}</h4>
-              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-      {{ end }}
-
-      {{ if $data.homepage.skill.enable }}
-      {{ with $data.homepage.skill }}
-      <div class="col-lg-6 col-sm-6 col-11 skill wow fadeInUp" data-wow-duration="1.5s">
-        <h3>{{ .title }}</h3>
-        <div class="skill-progress-bar">
-          {{ range .skill_list }}
-          <div class="clearfix">
-            <span class="skillbar-title">{{ .name }}</span>
-            <span class="skill-bar-percent">{{ .parcentage }}</span>
-            <div class="skillbar" data-percent="{{ .parcentage }}">
-              <div class="skillbar-bar"></div>
+    {{ if $data.homepage.photo.enable }}
+    {{ with $data.homepage.photo }}
+    <section class="photo" id="photo">
+      <div class="container-fluid text-center">
+        <div class="row photo-holder text-left">
+          <div class="col-12 text-center">
+            <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
+            <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
+              <ul class="photo-navigation">
+                <li data-filter="all" class="hvr-sweep-to-right active">Alle Fotos</li>
+                {{ $categories := slice }}
+                {{ range .photo_list }}
+                {{ $categories = $categories | append .category }}
+                {{ end }}
+                {{ range ( $categories | uniq ) }}
+                <li data-filter="{{ . | urlize }}" class="hvr-sweep-to-right">{{ . | humanize }}</li>
+                {{ end }}
+              </ul>
             </div>
           </div>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
-</section>
-<!-- =============================
-      End About Me
-    =============================== -->
-
-<!-- =============================
-      Start Services
-    =============================== -->
-<section class="services" id="service">
-  {{ if $data.homepage.service.enable }}
-  {{ with $data.homepage.service }}
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto col-sm-10">
-        <div class="wow fadeInUp" data-wow-duration="1.5s">
-          <div class="services-heading">
-            <div class="bar"></div>
-            <h1>{{ .title }}</h1>
-          </div>
-          <div class="row">
-            {{ range .service_list }}
-            <div class="col-lg-4 col-sm-4 col-12 services-icon">
-              <div class="service-img">
-                <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
+            <div class="row filtr-container wow list" data-wow-duration="1.5s">
+              {{ range .photo_list }}
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .category | urlize }}">
+                <div class="item-holder">
+                  <a href="{{ .image | absURL }}" title="{{ .name | safeHTML }}">
+                      <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}">
+                  </a>
+                </div>
               </div>
-              <div class="service-label">{{ .name | markdownify }}</div>
+              {{ end }}
             </div>
-            {{ end }}
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  {{ end }}
-  {{ end }}
-
-  {{ if $data.homepage.call_to_action.enable }}
-  {{ with $data.homepage.call_to_action }}
-  <div class="need-service wow fadeInUp" data-wow-duration="1.5s"
-    style="background-image: url('{{ .bg_image | absURL }}');">
-    <h1>{{ .title | markdownify }}</h1>
-    {{ with .content }} <p class="text-white">{{ . | markdownify }}</p> {{ end }}
-    {{ if .button.enable }}
-    {{ with .button }}
-    <a href="{{ .link }}">{{ .label }}</a>
+    </section>
     {{ end }}
     {{ end }}
-  </div>
-  {{ end }}
-  {{ end }}
-</section>
-<!-- =============================
-       End Services
-    =============================== -->
+    <!-- =============================
+           End Photo
+        =============================== -->
+
 
 <!-- =============================
-       Start Portfolio
+       Start Video
     =============================== -->
-{{ if $data.homepage.portfolio.enable }}
-{{ with $data.homepage.portfolio }}
-<section class="portfolio" id="portfolio">
+{{ if $data.homepage.video.enable }}
+{{ with $data.homepage.video }}
+<section class="video" id="video">
   <div class="container-fluid text-center">
-    <div class="row portfolio-holder text-left">
+    <div class="row video-holder text-left">
       <div class="col-12 text-center">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
         <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
-          <ul class="portfolio-navigation">
-            <li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
+          <ul class="video-navigation">
+            <li data-filter="all" class="hvr-sweep-to-right active">Alle Videos</li>
             {{ $categories := slice }}
-            {{ range .portfolio_list }}
+            {{ range .video_list }}
             {{ $categories = $categories | append .category }}
             {{ end }}
             {{ range ( $categories | uniq ) }}
@@ -328,17 +251,12 @@
         </div>
       </div>
       <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
-        <div class="row filtr-container wow fadeInUp list" data-wow-duration="1.5s">
-          {{ range .portfolio_list }}
+        <div class="row filtr-container wow list" data-wow-duration="1.5s">
+          {{ range .video_list }}
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .category | urlize }}">
             <div class="item-holder">
               <a href="{{ .image | absURL }}" title="{{ .name | safeHTML }}">
                   <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}">
-                <div class="item-caption">
-                  <h2>{{ .name | safeHTML }}</h2>
-                  <p>{{ .category | title }}</p>
-                  <div class="item-created">{{ .date }}</div>
-                </div>
               </a>
             </div>
           </div>
@@ -351,54 +269,83 @@
 {{ end }}
 {{ end }}
 <!-- =============================
-       End Portfolio
+       End Video
     =============================== -->
 
 <!-- =============================
-       Start Testimonials
+       Start About Me
     =============================== -->
-<section class="testimonials" id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="testimonials-container col-lg-8 offset-lg-2">
-        {{ if $data.homepage.testimonial.enable }}
-        {{ with $data.homepage.testimonial }}
-        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
-        <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1.5s">
-          {{ range .testimonial_slider }}
-          <div class="single-testimonial">
-            <div class="testimonial-holder">
-              <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
-              <h2>{{ .name }}</h2>
-              <span>{{ .designation | markdownify }}</span>
-              <p><i class="fa fa-quote-left"></i> {{ .content | markdownify }} <i class="fa fa-quote-right"></i></p>
+    <section class="about-me" id="about">
+      <div class="container">
+        {{ if $data.homepage.about.enable }}
+        {{ with $data.homepage.about }}
+        <div class="row about-me-holder">
+          <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
+            <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+              <h1>{{ .title | safeHTML }}</h1>
+              <p>{{ .content | markdownify | emojify }}</p>
+              {{ if .button.enable }}
+              {{ with .button }}
+              <a href="{{ .link | absURL }}" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
+              {{ end }}
+              {{ end }}
+            </div>
+          </div>
+          {{ with .image }}
+          <div class="col-lg-6 col-sm-6 col-9 about-me-images wow fadeInUp" data-wow-duration="1.5s">
+            <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+    
+        <div class="row experience-skill">
+          {{ if $data.homepage.experience.enable }}
+          {{ with $data.homepage.experience }}
+          <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
+            <h3>{{ .title }}</h3>
+            <ul class="experience-chart">
+              {{ range .experience_list }}
+              <li>
+                <div class="single-experience">
+                  <h4>{{ .name | markdownify }}</h4>
+                  {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+                  {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+                  {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+                </div>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+          {{ end }}
+    
+          {{ if $data.homepage.skill.enable }}
+          {{ with $data.homepage.skill }}
+          <div class="col-lg-6 col-sm-6 col-11 skill wow fadeInUp" data-wow-duration="1.5s">
+            <h3>{{ .title }}</h3>
+            <div class="skill-progress-bar">
+              {{ range .skill_list }}
+              <div class="clearfix">
+                <span class="skillbar-title">{{ .name }}</span>
+                <span class="skill-bar-percent">{{ .parcentage }}</span>
+                <div class="skillbar" data-percent="{{ .parcentage }}">
+                  <div class="skillbar-bar"></div>
+                </div>
+              </div>
+              {{ end }}
             </div>
           </div>
           {{ end }}
-        </div>
-        {{ end }}
-        {{ end }}
-
-        {{ if $data.homepage.funfacts.enable }}
-        {{ with $data.homepage.funfacts }}
-        <div class="fun-facts wow fadeInUp" data-wow-duration="1.5s">
-          {{ range .funfacts_list }}
-          <div class="fun-fact-holder">
-            <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
-            <p class="fact-counter count" data-count="{{ .count }}">0</p>
-            <p>{{ .name }}</p>
-          </div>
           {{ end }}
         </div>
-        {{ end }}
-        {{ end }}
       </div>
-    </div>
-  </div>
-</section>
-<!-- =============================
-       End Testimonials
-    =============================== -->
+    </section>
+    <!-- =============================
+          End About Me
+        =============================== -->
+
 
 <!-- =============================
        Start Contact
@@ -454,4 +401,7 @@
     =============================== -->
 <a href="#home" class="scroll-up hvr-icon-up"></a>
 
+<a href="impressum.html">
+  Impressum
+</a>
 {{ end }}
